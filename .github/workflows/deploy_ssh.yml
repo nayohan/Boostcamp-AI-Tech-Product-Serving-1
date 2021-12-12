@@ -13,8 +13,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }} 
-        username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
+        username: ${{ secrets.USER }}
+        key: ${{ secrets.KEY }}
         port: 22
         script: |
             cd ${{ github.event.repository.name }}/part2/04-cicd
